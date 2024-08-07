@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Definindo a fonte padrão */
+body {
+    height: 100vh;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1.6;
+    color: #333;
+    margin: 20px;
+    background-color: #F37820;
+}
+
+p{
+    color: #ff1504;
+    text-align: left;
+    font-size: 15px;
+    padding: 4px 10px;
+    margin-top: 6px;
+}
+
+
+form {
+    background: #ffffff;
+    width: 747px;
+    height: 810px;
+    top: 30px;
+    left: 100px;
+    position: absolute; 
+    border-radius:10px ;
+} 
+
+/* Estilizando os campos de entrada */
+input[type="text"], input[type="date"], input[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 12px;
+    max-width: calc(100% - 50px);
+}
+
+/* Estilizando o botão de envio */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    width: fit-content;
+    margin-top: 20px;
+}
+
+legend{
+    text-align: center;
+    font-size: 30px;
+}
+
+fieldset{
+    border: none;
+    width: 747px;
+    height: 872px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando os labels */
+label {
+    display: block;
+    margin-bottom: 3px;
+    font-weight: bold;
+    color: #666;
+}
+
+.imagemSecti {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+    margin: 5% 50%;
+}
+
+input[type = "file"]{
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+}

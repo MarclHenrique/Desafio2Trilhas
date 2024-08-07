@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Inscrição</title>
+    <link rel="stylesheet" href="style.css"> 
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="formularioInscricao" method="post">
+        <fieldset>
+                <legend>Inscreva-se</legend>
+                <p>*Preencha todos os Campos</p>
+                <section>
+                    <label for="nomeCompleto">Nome Completo:</label>
+                    <input type="text" name="nomeCompleto" required><br>
+                </section>
+                <section>
+                    <label for="dataNascimento">Data de Nascimento:</label>
+                    <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+                </section>
+                <section>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" title="Formato correto: 123.456.789-00" required><br>
+                </section>
+                <section>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" required><br>
+                </section>
+                <section>
+                    <label for="telefone">Número de Telefone:</label>
+                    <input type="tel" name="telefone" pattern="\(\d{2}\) \d{5}-\d{4}" title="Formato correto: (98) 91234-5678" required><br>
+                </section>
+                <section>
+                    <label for="cep">CEP:</label>
+                    <input type="text"  name="cep" pattern="\d{5}-\d{3}" title="Formato correto: 12345-678" required><br>
+                </section>
+                <section>
+                    <label for="certificado">Certificado de Conclusão do EM:</label>
+                    <input type="file"  name="certificado"><br>
+                </section>
+                <section>
+                    <label for="comprovanteResidencia">Comprovante de Residência:</label>
+                    <input type="file" name="comprovanteResidencia"><br>
+                </section>
+                <section>
+                    <label for="trilhaRequerida">Trilha Requerida:</label>
+                    <select  name="trilhaRequerida">
+                        <option value="">Selecione...</option>
+                        <option value="Back-End">Back-End</option>
+                        <option value="Front-End">Front-End</option>
+                        <option value="Dados">Dados</option>
+                        <option value="Ux/Ui Design">Design</option>
+                        <option value="Desenvolvimento de Jogos">Desenvolvimento de Jogos</option>
+                    </select><br>
+                </section>
+                <button type="submit">Enviar</button>
+            </fieldset>
+        </form>
+        <img class='imagemSecti' src="img/ProgramaTrilhas.png" alt="Imagem Programa Trilhas">
+</body>
+</html>
